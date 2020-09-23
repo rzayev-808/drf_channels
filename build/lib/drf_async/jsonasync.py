@@ -138,6 +138,5 @@ class AzPUG(object, metaclass=AzPUGMetaClass):
     def serialize_data(self, instance):
         
         assert self.serializer is not None
-        print(self.serializer(instance).data)
 
         return self.serializer(instance).data

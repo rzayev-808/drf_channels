@@ -1,0 +1,9 @@
+Django
+channels
+djangorestframework
+
+[test]
+pytest
+pytest-cov
+pytest-django
+pytest-asyncio
