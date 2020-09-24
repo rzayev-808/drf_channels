@@ -22,6 +22,7 @@ class AzPUGMetaClass(type):
         if newclass.model is not None:
             newclass.register()
 
+
         return newclass
 
 
