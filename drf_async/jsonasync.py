@@ -8,9 +8,7 @@ from django.db.models.signals import (
 from django.db import transaction
 from .utils import groupSendSync
 
-"""
-This is heavly inspired from the bindings that existed in channels v1.
-"""
+
 
 CREATE = 'create'
 UPDATE = 'update'
