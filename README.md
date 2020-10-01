@@ -69,6 +69,7 @@ Bundan sonra emin olunki WebsocketConsumer-de duzgun add eleyirsiz grupu misal  
 Hemcinin (`"action": "update"`) ve ya (`"action": "delete"`) eyni netice alacagsiz.
 
 ```python
+from drf_async.mixins import DRFJsonConsumerMixinAsync
 
     class TestConsumer(AsyncJsonWebsocketConsumer, DRFJsonConsumerMixinAsync):
         async def connect(self):
