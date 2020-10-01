@@ -82,4 +82,4 @@ from drf_async.mixins import DRFJsonConsumerMixinAsync
 ```
 
 
-DRFJsonConsumerMixinAsync mixsini consumer class da gostermeyiniz shertdi
+`DRFJsonConsumerMixinAsync` mixsini consumer class da gostermeyiniz shertdi
