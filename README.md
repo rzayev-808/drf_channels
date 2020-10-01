@@ -67,3 +67,18 @@ Bundan sonra emin olunki WebsocketConsumer-de duzgun add eleyirsiz grupu misal  
 ```
 
 Hemcinin (`"action": "update"`) ve ya (`"action": "delete"`) eyni netice alacagsiz.
+
+```python
+
+    class TestConsumer(AsyncJsonWebsocketConsumer, DRFJsonConsumerMixinAsync):
+        async def connect(self):
+            await self.channel_layer.group_add('test', self.channel_name)
+            await self.accept()
+
+        async def disconnect(self, close_code):
+            await self.channel_layer.group_discard('test', self.channel_name)
+
+```
+
+
+DRFJsonConsumerMixinAsync mixsini consumer class da gostermeyiniz shertdi
