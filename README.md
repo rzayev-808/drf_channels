@@ -1,6 +1,6 @@
 # DRF channels WS
 
-Proekt AzerbaycanPythonCommunity ucun publish olunur
+Proekt Azerbaijan Python Users Community ucun publish olunur
 
 ## Installation
 
