@@ -25,7 +25,7 @@ class Car(models.Model):
 class CarSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bird
-        fields = ['__all__']
+        fields = '__all__'
 
 
 class CarWS(AzPUG):
