@@ -52,7 +52,7 @@ class GarageWS(AzPUG):
         return {'id': instance.id, 'name': instance.name}
 ```
 Bundan sonra emin olunki WebsocketConsumer-de duzgun add eleyirsiz grupu misal   `self.channel_layer.group_add('bmw', self.channel_name)`  
-`Garage.objects.create(name='bmw')` bundan sonra duzgun websocket connect olacag:
+`Garage.objects.create(name='bmw')` bundan sonra duzgun websocket connect olacag. Serializersiz versiya ucun.!
 
 ```json
 {
