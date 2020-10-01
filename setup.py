@@ -5,14 +5,14 @@ from shutil import rmtree
 
 from setuptools import find_packages, setup, Command
 
-NAME = 'drf_async_ws'
+NAME = 'drf-async-ws'
 MODULE = 'drf_async'
 DESCRIPTION = ''
 URL = 'https://github.com/CavidRzayev/drf_channels'
 EMAIL = 'rzayev592@gmail.com'
 AUTHOR = 'Cavid Rzayev'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = None
+VERSION = '0.0.1'
 
 REQUIRED = [
     'Django', 'channels', 'djangorestframework'

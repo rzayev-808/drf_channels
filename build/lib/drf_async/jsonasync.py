@@ -8,9 +8,7 @@ from django.db.models.signals import (
 from django.db import transaction
 from .utils import groupSendSync
 
-"""
-This is heavly inspired from the bindings that existed in channels v1.
-"""
+
 
 CREATE = 'create'
 UPDATE = 'update'
@@ -23,6 +21,7 @@ class AzPUGMetaClass(type):
 
         if newclass.model is not None:
             newclass.register()
+
 
         return newclass
 
@@ -138,5 +137,6 @@ class AzPUG(object, metaclass=AzPUGMetaClass):
     def serialize_data(self, instance):
         
         assert self.serializer is not None
+        print(self.serializer(instance).data)
 
         return self.serializer(instance).data
