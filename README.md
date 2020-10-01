@@ -24,7 +24,7 @@ class Car(models.Model):
 
 class CarSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Bird
+        model = Car
         fields = '__all__'
 
 
