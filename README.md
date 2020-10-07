@@ -27,9 +27,16 @@ Library Azerbaijan Python Users Community ucun publish olunur
         def serialize_data(self, instance):
             return {'id': instance.id, 'username': instance.username}
 ```
+## Vacibdir
+
+
+`DRFJsonConsumerMixinAsync` mixsini consumer class da gostermeyiniz shertdi
+
 
 
 ### Nece isdeyir(example)
+[`Example projects`](https://github.com/CavidRzayev/drf_channels_example)
+
 ```python
 from django.db import models
 from rest_framework import serializers
@@ -103,7 +110,6 @@ from drf_async.mixins import DRFJsonConsumerMixinAsync
 ```
 
 
-`DRFJsonConsumerMixinAsync` mixsini consumer class da gostermeyiniz shertdi
 
 
 
