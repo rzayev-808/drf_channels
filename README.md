@@ -8,6 +8,27 @@ Library Azerbaijan Python Users Community ucun publish olunur
 
 ## Usage
 
+
+## UPDATE
+
+`m2m_senders = [User.groups.through]`  hemcinin m2m fields der ucunde elave olundu 
+
+```python
+
+ class Test(AzPUG):
+        model = User
+        stream = 'users'
+        m2m_senders = [User.groups.through]
+
+        @classmethod
+        def group_names(cls, instance):
+            return ['test']
+
+        def serialize_data(self, instance):
+            return {'id': instance.id, 'username': instance.username}
+```
+
+
 ### Nece isdeyir(example)
 ```python
 from django.db import models
@@ -83,3 +104,7 @@ from drf_async.mixins import DRFJsonConsumerMixinAsync
 
 
 `DRFJsonConsumerMixinAsync` mixsini consumer class da gostermeyiniz shertdi
+
+
+
+
