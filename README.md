@@ -12,19 +12,7 @@ Library Azerbaijan Python Users Community ucun publish olunur
 ## UPDATE
 
 `m2m_senders = [User.groups.through]`  hemcinin m2m fields der ucunde elave olundu 
-```json
 
- {
-        "organization_name": "Test Organizer",
-        "phone_number": 994774773332,
-        "address": "baku",
-        "user_organization":[{
-            "email":"test@mail.ru",
-            "username":"test",
-            "password":"testpassword2"
-        }]
-    }
-```
 
 ```python
 
